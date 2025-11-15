@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories - Heimdall Luxury Fragrances</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <span class="logo-icon">⚡</span>
+                        <span class="logo-text">HEIMDALL</span>
+                    </a>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Shop</a></li>
+                    <li><a href="categories.html" class="active">Categories</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="cart-icon">
+                        <a href="#" id="cartBtn">
+                            <span>🛒</span>
+                            <span class="cart-count" id="cartCount">0</span>
+                        </a>
+                    </li>
+                </ul>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Fragrance Categories</h1>
+            <p class="page-subtitle">Explore our curated collections</p>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories-section">
+        <div class="container">
+            <!-- Men's Fragrances -->
+            <div class="category-block" id="mens">
+                <div class="category-header">
+                    <h2 class="category-title">Men's Fragrances</h2>
+                    <p class="category-description">Bold, sophisticated scents crafted for the modern gentleman</p>
+                </div>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://via.placeholder.com/400x500/1a237e/ffffff?text=HEIMDALL+CLASSIC" alt="Heimdall Classic">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Heimdall Classic</h3>
+                            <p class="product-type">Eau de Parfum</p>
+                            <div class="product-notes">
+                                <span>Bergamot • Cedar • Amber</span>
+                            </div>
+                            <div class="product-price">$185.00</div>
+                            <div class="product-actions">
+                                <button class="btn btn-cart" onclick="addToCart('Heimdall Classic', 185)">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://via.placeholder.com/400x500/4a148c/ffffff?text=HEIMDALL+NOIR" alt="Heimdall Noir">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Heimdall Noir</h3>
+                            <p class="product-type">Eau de Parfum</p>
+                            <div class="product-notes">
+                                <span>Black Pepper • Leather • Oud</span>
+                            </div>
+                            <div class="product-price">$195.00</div>
+                            <div class="product-actions">
+                                <button class="btn btn-cart" onclick="addToCart('Heimdall Noir', 195)">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://via.placeholder.com/400x500/1a237e/ffffff?text=HEIMDALL+MIDNIGHT" alt="Heimdall Midnight">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Heimdall Midnight</h3>
+                            <p class="product-type">Eau de Parfum</p>
+                            <div class="product-notes">
+                                <span>Dark Chocolate • Coffee • Vetiver</span>
+                            </div>
+                            <div class="product-price">$200.00</div>
+                            <div class="product-actions">
+                                <button class="btn btn-cart" onclick="addToCart('Heimdall Midnight', 200)">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Women's Fragrances -->
+            <div class="category-block" id="womens">
+                <div class="category-header">
+                    <h2 class="category-title">Women's Fragrances</h2>
+                    <p class="category-description">Elegant, timeless fragrances that celebrate femininity</p>
+                </div>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://via.placeholder.com/400x500/0d47a1/ffffff?text=HEIMDALL+ROYAL" alt="Heimdall Royal">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Heimdall Royal</h3>
+                            <p class="product-type">Eau de Parfum</p>
+                            <div class="product-notes">
+                                <span>Rose • Saffron • Sandalwood</span>
+                            </div>
+                            <div class="product-price">$210.00</div>
+                            <div class="product-actions">
+                                <button class="btn btn-cart" onclick="addToCart('Heimdall Royal', 210)">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://via.placeholder.com/400x500/4a148c/ffffff?text=HEIMDALL+AURORA" alt="Heimdall Aurora">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Heimdall Aurora</h3>
+                            <p class="product-type">Eau de Parfum</p>
+                            <div class="product-notes">
+                                <span>Grapefruit • White Flowers • White Musk</span>
+                            </div>
+                            <div class="product-price">$190.00</div>
+                            <div class="product-actions">
+                                <button class="btn btn-cart" onclick="addToCart('Heimdall Aurora', 190)">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://via.placeholder.com/400x500/6a1b9a/ffffff?text=HEIMDALL+ESSENCE" alt="Heimdall Essence">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Heimdall Essence</h3>
+                            <p class="product-type">Eau de Parfum</p>
+                            <div class="product-notes">
+                                <span>Lavender • Vanilla • Musk</span>
+                            </div>
+                            <div class="product-price">$175.00</div>
+                            <div class="product-actions">
+                                <button class="btn btn-cart" onclick="addToCart('Heimdall Essence', 175)">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Unisex Fragrances -->
+            <div class="category-block" id="unisex">
+                <div class="category-header">
+                    <h2 class="category-title">Unisex Fragrances</h2>
+                    <p class="category-description">Versatile scents that transcend gender boundaries</p>
+                </div>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://via.placeholder.com/400x500/1a237e/ffffff?text=HEIMDALL+CLASSIC" alt="Heimdall Classic">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Heimdall Classic</h3>
+                            <p class="product-type">Eau de Parfum</p>
+                            <div class="product-notes">
+                                <span>Bergamot • Cedar • Amber</span>
+                            </div>
+                            <div class="product-price">$185.00</div>
+                            <div class="product-actions">
+                                <button class="btn btn-cart" onclick="addToCart('Heimdall Classic', 185)">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://via.placeholder.com/400x500/6a1b9a/ffffff?text=HEIMDALL+ESSENCE" alt="Heimdall Essence">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Heimdall Essence</h3>
+                            <p class="product-type">Eau de Parfum</p>
+                            <div class="product-notes">
+                                <span>Lavender • Vanilla • Musk</span>
+                            </div>
+                            <div class="product-price">$175.00</div>
+                            <div class="product-actions">
+                                <button class="btn btn-cart" onclick="addToCart('Heimdall Essence', 175)">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>HEIMDALL</h3>
+                    <p>Luxury fragrances inspired by Nordic mythology</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="products.html">All Products</a></li>
+                        <li><a href="categories.html?cat=men">Men's Fragrances</a></li>
+                        <li><a href="categories.html?cat=women">Women's Fragrances</a></li>
+                        <li><a href="categories.html?cat=unisex">Unisex Fragrances</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="Pinterest">📌</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Heimdall. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Shopping Cart</h3>
+            <button class="cart-close" id="cartClose">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <p class="cart-empty">Your cart is empty</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total: $<span id="cartTotal">0.00</span></span>
+            </div>
+            <button class="btn btn-primary btn-full">Checkout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
